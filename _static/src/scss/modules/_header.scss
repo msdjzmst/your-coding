@@ -1,0 +1,75 @@
+@use   '../setting/setting';
+@use '../mixin/mixin' as *;
+.header {
+  line-height: 94px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+  transition: .3s;
+}
+.header-inner {
+  max-width: 74.816984vw;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-right: 14px;
+  padding-left: 1.976574vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+//ヘッダーロゴ
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo__title {
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+//ヘッダーナビ
+.header-nav {
+  // padding-left: 9.956076vw;
+  margin-left: 136px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    font-weight: bold;
+    // padding-right: 3.367496vw;
+    padding-right: 46px;
+    white-space: nowrap;
+  }
+  &__item:last-of-type {
+    padding-right: 0;
+  }
+}
+.header-button {
+  margin-left: 13.469985vw;
+}
+
+@include mq(l){
+  .header-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-button {
+    display: none;
+  }
+}

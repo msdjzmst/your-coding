@@ -1,0 +1,52 @@
+@use '../mixin/mixin' as *;
+
+.btn {
+  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+border-radius: 10px;
+box-shadow: 0px 3px 6px #00000029;
+  display: block;
+  min-width: 155px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 37px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.burger-btn{ //バーガーボタンの外側
+  display: none;
+  position: absolute;
+  right: 4vw;
+  border: 2px solid #121212;
+  border-radius: 5px;
+  padding: 5px;
+}
+.burger-btn .bar{ //ボタンの線
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #121212;
+  transition: .3s; /* バーガーメニュー戻り用*/
+}
+.bar__top,
+.bar__mid{ //線の間隔
+  margin-bottom: 5px;
+}
+.burger-btn.cross .bar__top{ //押された後の×上側
+  transform: rotate(45deg) translate(5px,5px);
+  transition: .3s;
+}
+.burger-btn.cross .bar__mid{ //押された後の真ん中消す
+  opacity: 0;
+}
+.burger-btn.cross .bar__bottom{ //押された後の下の線
+  transform: rotate(-45deg) translate(5px,-5px);
+  transition: .3s;
+}
+
+
+@include mq (l) {
+  .burger-btn {
+    display: block;
+  }
+}

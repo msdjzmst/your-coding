@@ -1,0 +1,78 @@
+//common
+.price {
+  background-color: #EEFBFB;
+  padding-top: 50px;
+  padding-bottom: 71px;
+  &__title {
+    padding-left: 14px;
+  }
+  &__sub-title {
+    padding-left: 11px;
+    margin-top: 6px;
+  }
+}
+.price-table {
+  margin-top: 67px;
+  padding-left: 16.178624vw;
+  padding-right: 14.934114vw;
+  &__inner {
+    width: 100%;
+  }
+}
+.price-table__body {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, .16);
+  border-collapse: collapse;
+  font-weight: bold;
+  height: 410px;
+  line-height: 1.75;
+}
+.price-table__header,
+.price-table__text {
+  border: 1px solid #E5E5E5;
+}
+.price-table__header {
+  padding: 0 18px ;
+  width: 21.193265vw;
+  vertical-align: middle;
+}
+.price-table__text {
+  padding-left: 30px;
+  vertical-align: middle;
+}
+
+//price-table__header-first
+.price-table__first {
+  height: 95px;
+}
+
+//price-table__second
+.price-table__second {
+  height: 100px;
+  padding-bottom: 10px;
+}
+.price-table__header-second {
+  padding-top: 12px;
+}
+.price-table__text-second {
+  padding-top: 12px;
+}
+.price-table__third {
+  height: 103px;
+}
+.price-table__fourth {
+  height: 113px;
+}
+.price-table__header-fourth,
+.price-table__text-fourth {
+  padding-bottom: 10px;
+}
+//annotation
+.price-annotation {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 38px;
+  padding-right: 5px;
+  padding-left: 21px;
+}

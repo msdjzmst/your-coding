@@ -1,0 +1,35 @@
+@use '../setting/setting' as s;
+@use '../setting/reset';
+
+// メディアクエリ
+
+$breakpoint: (
+    s: 'screen and (max-width: 1000px)',
+    m: 'screen and (max-width: 900px)' ,
+    l: 'screen and (max-width: 970px)',
+    xl: 'screen and (max-width: 1280px)'
+);
+
+@mixin mq($bp) {
+    @media #{map-get($breakpoint, $bp)} {
+        @content;
+    }
+}
+
+@mixin background(
+  $color: transparent,
+  $image,
+  // 呼び出し側：ulr(../img/)など
+  $repeat: no-repeat,
+  $position-x: center,
+  $position-y: center,
+  $size: cover
+) {
+  background: {
+    color: $color;
+    image: $image;
+    repeat: $repeat;
+    position: $position-x $position-y;
+    size: $size;
+  }
+}

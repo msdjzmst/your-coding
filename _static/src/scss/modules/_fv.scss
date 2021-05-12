@@ -1,0 +1,51 @@
+@use   '../setting/setting' as *;
+@use '../mixin/mixin' as *;
+
+.top-page {
+  overflow: hidden;
+  position: relative;
+}
+.fv {
+  width: 100%;
+
+}
+
+.fv_bg-img {
+  position: absolute;
+  top: -124px;
+  right: -100px;
+  z-index: -1;
+  overflow: hidden;
+}
+.fv-inner {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 131px;
+  padding-bottom: 113px;
+  padding-right: 11.493411vw;
+  padding-left: 14.055637vw;
+  margin: 0 auto;
+}
+
+.fv-copy {
+  margin-top: 24px;
+}
+.fv-copy__title {
+  font-size: 2rem;
+  // @include lineHeightCrop(1.6875);
+  line-height: 1.6875;
+  font-weight: bold;
+}
+.fv-copy__text {
+  font-weight: bold;
+  // @include lineHeightCrop(1.6875);
+  line-height: 1.6875;
+}
+.fv-copy__text-mt{
+  margin-top: 22px;
+}
+
+.fv-copy__btn {
+  margin-top: 35px;
+}
