@@ -96,11 +96,11 @@ const imgImagemin = () => {
             quality: 80
           }),
           imageminPngquant(),
-          imageminSvgo({
-            plugins: [{
-              removeViewbox: false
-            }]
-          })
+          // imageminSvgo({
+          //   plugins: [{
+          //     removeViewbox: false
+          //   }]
+          // })
         ], {
           verbose: true
         }
