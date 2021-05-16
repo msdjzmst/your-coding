@@ -355,13 +355,58 @@
     </section>
     <!-- /.works -->
 
+
+    <!--コンタクトフォーム-->
+    <section class="contact" id="contact">
+      <h2 class="section-title contact__title contact__title--white" data-aos="fade-up">お問い合わせ</h2>
+      <p class="section-sub-title contact__sub-title contact__sub-title--white" data-aos="fade-up">CONTACT</p>
+      <p class="section-sub-title contact__text" data-aos="fade-up">コーディングの人出が足りないとき、<br>
+        あなたの力になります
+      </p>
+      <div class="contact__form form" data-aos="fade-up">
+        <div class="form__inner">
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScT_j4G7DM17xi42UdDCVkquzZ1M2uQCipaCfrn82qOsM8muA/formResponse"
+            method="post" id="form">
+
+            <div class="form__item">
+              <label for="name">お名前<span class="must">必須</span></label>
+              <input id="name" type="text" name="entry.2070511829" required>
+            </div>
+
+            <div class="form__item form__email">
+              <label for="email">メールアドレス<span class="must must-second">必須</span></label>
+              <input id="email" type="email" name="emailAddress" required>
+            </div>
+
+            <div class="form__item form__message">
+              <label for="comment">お問い合わせ内容<span class="must">必須</span></label>
+              <textarea name="entry.1702561538" id="comment" required></textarea>
+            </div>
+
+            <div class="form__privacy-check">
+              <input id="privacy" type="checkbox" name="entry.484353275" value="privacy" required>
+              <label for="privacy">プライバシーポリシーに同意する</label>
+            </div>
+
+            <div class="form__submit-btn">
+              <input type="submit" value="送信する" class="btn submit-btn contact-btn">
+            </div>
+          </form>
+          <p class="end-message">お問い合わせありがとうございました</p>
+          <p class="false-message">送信失敗です</p>
+        </div>
+      </div>
+    </section>
+    <!--/.contact-form-->
+
     <footer class="footer">
-      <h2 class="footer-title">ユアコーディング</h2>
-      <div class="footer-nav">
+      <h2 class="footer__title">ユアコーディング</h2>
+      <div class="footer__nav">
         <a href="#">プライバシーポリシー</a>
         <a href="#">個人商取引法に基づく表記</a>
       </div>
-      <p>&copyユアコーディング, All Rights Reserved.</p>
+      <p class="footer__copyright">&copyユアコーディング, All Rights Reserved.</p>
 
   </main>
 

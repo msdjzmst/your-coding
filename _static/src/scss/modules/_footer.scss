@@ -1,0 +1,30 @@
+@use '../mixin/mixin' as * ;
+
+.footer {
+  font-weight: bold;
+  padding: 46px 0 49px 16px;
+  max-width: 100%;
+  text-align: center;
+  @include mq(m) {
+    padding-left: 0;
+  }
+  &__title {
+    font-size: 1.5rem;
+  }
+  &__nav {
+    margin-top: 28px;
+    padding-left: 34px;
+    & a:first-of-type {
+      margin-right: 26px;
+    }
+    @include mq(m) {
+      padding-left: 0;
+    }
+  }
+  &__copyright {
+    font-size: 0.875rem;
+    display: block;
+    font-weight: normal;
+    padding-top: 57px;
+  }
+}
